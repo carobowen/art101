@@ -4,6 +4,12 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px #c74a06;
+    background-color: #dab10f;
   }
+#content {
+  background-color: brown;
+}
+.minor-section h2{
+  font-family: 'Times New Roman';
+}
