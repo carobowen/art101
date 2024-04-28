@@ -4,6 +4,20 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px orangered;
+    background-color: hwb(48 15% 9%);
+  }
+
+  #content{
+    font-family: "Times New Roman"
+  }
+  #content h2{
+    font-family:"Times New Roman"
+  }
+
+  #content{
+    background-color: peachpuff;
+  }
+  #content h1{
+    font-family: "Times New Roman";
   }
