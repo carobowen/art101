@@ -1,11 +1,11 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #c74a06;
-    background-color: #dab10f;
+    border: solid 1px wheat;
+    background-color: darkolivegreen;
   }
 #content {
-  background-color: brown;
+  background-color: darkolivegreen;
 }
 .minor-section h2{
   font-family: 'Times New Roman';
