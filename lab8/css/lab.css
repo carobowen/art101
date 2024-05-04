@@ -1,0 +1,14 @@
+
+
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px plum;
+    background-color: violet;
+  }
+#content {
+  background-color:rgb(81, 47, 107);
+}
+.minor-section {
+  font-family: 'Times New Roman';
+}
