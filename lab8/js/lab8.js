@@ -14,9 +14,13 @@ console.log("Is 7 prime?", isPrime(7));
 array = [1,2,3,4,5,6,7,8,9,10]
 console.log("My array", array);
 
-var mapResults = array.map(isPrime) ;
+function isPrime(x) {
+    return (x % 2 == 0);
+}
+var mapResults = array.map(isPrime)
 //should return [false, true, false, true, false, true, false, true, false, true]
-console.log("Test of primeness of array:", result);
+console.log("Test of primeness of array:", mapResults); 
+
 
 var result = array.map(function(x){
     return x ** 0.5;
@@ -28,16 +32,3 @@ console.log("Squareroot of array:", result);
 
 
 
-(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-array.map(isPrime)
-(10) [false, true, false, true, false, true, false, true, false, true]
-array.map(function(x){
-    return x ** 0.5;
-})
-(10) [1, 1.4142135623730951, 1.7320508075688772, 2, 2.23606797749979, 2.449489742783178, 2.6457513110645907, 2.8284271247461903, 3, 3.1622776601683795]
-
-var mapResults = array.map(isPrime) ;
-undefined
-console.log("Results: ", mapResults)
- Results:  (10) [false, true, false, true, false, true, false, true, false, true]
-undefined

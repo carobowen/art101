@@ -12,3 +12,11 @@
 .minor-section {
   font-family: 'Times New Roman';
 }
+
+#content h1 {
+    font-family: 'Times New Roman';
+  }
+
+  .minor-section h2 {
+    font-family: 'Times New Roman';
+  }
