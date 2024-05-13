@@ -1,0 +1,35 @@
+#challenge{
+    background-color: antiquewhite;
+}
+
+#Problems{
+    background-color: peachpuff;
+}
+
+#Results{
+    background-color: aliceblue;
+}
+
+#content{
+    font-family: "Times New Roman";
+}
+
+#content h2{
+    font-family:"Times New Roman" ;
+}
+
+#content h1{
+    font-family: "Times New Roman";
+}
+
+#content{
+    background-color: olive;
+}
+
+.minor-section{
+    background-color: olive;
+}
+
+#output{
+    background-color: antiquewhite;
+}
