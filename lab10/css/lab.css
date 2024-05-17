@@ -1,0 +1,24 @@
+
+
+#output {
+    background: white;
+    padding: 10px;
+    min-height: 100pxs;
+}
+
+
+.minor-section {
+    background-color: palegoldenrod;
+}
+
+.minor-section h2 {
+    font-family: Times New Roman;
+}
+
+#content h1 {
+    font-family: Times New Roman;
+}
+
+#content {
+    background-color: paleturquoise;
+}
