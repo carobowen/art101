@@ -1,0 +1,37 @@
+#output {
+    background: white;
+    padding: 10px;
+    min-height: 100pxs;
+}
+
+
+.minor-section {
+    font-style: oblique;
+    font-family: 'Courier New';
+    backdrop-filter: opacity(20%);
+}
+
+#content h1 {
+    font-family: serif;
+    font-style: oblique;
+}
+
+.minor-section h2 {
+    font-family: 'Courier New';
+}
+
+#content {
+    background-color: plum;
+}
+
+
+.circle h2 {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: smaller;
+    background: #000
+  }
