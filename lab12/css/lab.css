@@ -1,0 +1,29 @@
+#output {
+    background: plum;
+    padding: 10px;
+    min-height: 100pxs;
+    font-family: fantasy;
+}
+
+.minor-section {
+    background-color: plum;
+}
+
+.minor-section h2 {
+    font-family: fantasy;
+}
+.input-output {
+    font-family: fantasy;
+}
+
+.input-output h3 {
+    font-family: fantasy;
+}
+
+#content h1 {
+    font-family: fantasy;
+}
+
+#content {
+    background-color: pink;
+}
