@@ -1,0 +1,185 @@
+/* ../css/site.css or css/lab.css */
+
+/* General Styling */
+body {
+    background-color: #ffe6f7; /* Light pastel pink background */
+    color: #b03a7e; /* Deep pink text */
+    font-family: 'Garamond', serif; /* Elegant and fairy-like font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://example.com/path-to-your-fairy-background.jpg'); /* Background image with fairy-core elements */
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: row; /* Horizontal layout */
+    overflow-x: auto;
+}
+
+/* Main content styling */
+#content {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 800px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row; /* Arrange sections horizontally */
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    border: 2px solid #ff69b4; /* Hot pink border */
+}
+
+/* Sections */
+section {
+    margin-right: 20px;
+}
+
+/* Headers */
+h1, h2 {
+    font-family: 'Cinzel Decorative', cursive; /* Decorative fairy-like font */
+    color: #b03a7e; /* Deep pink color */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Inputs and Buttons */
+input[type="text"], button {
+    font-family: 'Garamond', serif;
+    border: 2px solid #b03a7e;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    background-color: #ffccff; /* Light pink background */
+}
+
+button {
+    background-color: #ff69b4; /* Hot pink background */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff85c0; /* Lighter hot pink on hover */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.8); /* Pink glow effect */
+}
+
+#output {
+    margin-top: 20px;
+}
+
+.error {
+    color: #ff4b4b;
+    font-weight: bold;
+}
+
+/* Add some decorative elements */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://example.com/path-to-your-fairy-silhouettes.png') no-repeat center;
+    background-size: contain;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+input[type="text"]::placeholder {
+    color: #ffb6c1; /* Light pink placeholder */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.8); /* Fairy glow effect */
+}
+
+/* Horizontal Layout Adjustments */
+.minor-section {
+    min-width: 200px; /* Ensure sections have a minimum width */
+    flex-grow: 1; /* Allow sections to grow */
+}
+
+#output {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Sparkle effect */
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #ff69b4 0%, transparent 70%);
+    border-radius: 50%;
+    animation: sparkle 1.5s infinite;
+    pointer-events: none;
+}
+
+body::after, body::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle, #ff69b4 0%, transparent 70%);
+    border-radius: 50%;
+    animation: sparkle 1.5s infinite;
+    pointer-events: none;
+}
+
+body::before {
+    animation-delay: 0.75s;
+}
+
