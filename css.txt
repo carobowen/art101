@@ -1,0 +1,259 @@
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.slide {
+    flex: 0 0 100%;
+    transition: transform 1s ease; /* Adjust transition timing here */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2f2f2f;
+    color: #ddd;
+    text-align: center;
+    padding: 50px;
+}
+
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #2b2b2b;
+    color: #d1c4af;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3b3b3b;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #555;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d1c4af;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #a7a9ab;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+}
+
+.exhibit {
+    background-color: #3b3b3b;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.exhibit h3 {
+    color: #e2ded2;
+}
+
+footer {
+    background-color: #3b3b3b;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #555;
+}
+
+footer p {
+    margin: 0;
+    color: #d1c4af;
+}
+
+a {
+    color: #a7a9ab;
+}
+
+a:hover {
+    color: #fff;
+}
+
+//html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Square Carousel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="carousel">
+        <div class="slide red"></div><div class="slide blue"></div><div class="slide green"></div><div class="slide yellow"></div>
+    </div>
+
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead Plant Museum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dead Plant Museum</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#exhibits">Exhibits</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to the Dead Plant Museum</h2>
+            <p>Explore the fascinating world of dead plants. Discover their stories and significance through our meticulously curated exhibits.</p>
+        </section>
+        <section id="exhibits">
+            <h2>Exhibits</h2>
+            <div class="exhibit">
+                <h3>Exhibit 1: The Ancient Fern</h3>
+                <p>The Ancient Fern dates back to the Carboniferous period. This exhibit showcases its fossilized remains.</p>
+            </div>
+            <div class="exhibit">
+                <h3>Exhibit 2: The Petrified Forest</h3>
+                <p>Experience the Petrified Forest exhibit, featuring trees that have turned to stone over millions of years.</p>
+            </div>
+            <!-- Add more exhibits as needed -->
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The Dead Plant Museum is dedicated to preserving and showcasing the remnants of plant life from past eras. Our mission is to educate and inspire visitors through our unique exhibits.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more, please <a href="mailto:info@deadplantmuseum.com">contact us</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dead Plant Museum. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+//javascript
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${100 * (i - index)}%)`;
+        console.log(index);
+    });
+}
+
+function nextSlide() {
+    if (slideIndex < slides.length+2) {
+        slideIndex+=2;
+        showSlide(slideIndex);
+    }
+    else if(slideIndex >= slides.length+2) {
+        slideIndex = 0;
+        showSlide(slideIndex);
+    }
+}
+
+function prevSlide() {
+    if (slideIndex > 0) {
+        slideIndex-=2;
+        showSlide(slideIndex);
+    }
+    else if(slideIndex <=0) {
+        slideIndex = slides.length+2;
+        showSlide(slideIndex);
+    }
+}
+
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${(i - currentSlide) * 100}%)`;
+    });
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+});
+

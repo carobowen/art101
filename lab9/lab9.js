@@ -7,28 +7,40 @@
    Date: May 12, 2023
 */
 
-// add button to challenge section
-$("#challenge").append("<button id='button-challenge'>listener</button>");
 
-$("#Problems").append("<button id='button-challenge'>listener</button>");
 
-$("#Results").append("<button id='button-challenge'>listener</button>");
+$(document).ready(function(){
+  // Add button to challenge section
+  $("#challenge").append("<button id='button-challenge'>listener</button>");
+  $("#Problems").append("<button id='button-problems'>listener</button>");
+  $("#Results").append("<button id='button-results'>listener</button>");
 
-// add a click listener to the challenge button
-$("button-challenge").click(function(){
-   // now add (or subtract) the "special" class to the section
-    $("#challenge").toggleClass("special");
-});
-
-$("p").on({
-    mouseenter: function(){
-      $(this).css("background-color", "lightgray");
-    },
-    mouseleave: function(){
-      $(this).css("background-color", "lightblue");
-    },
-    click: function(){
-      $(this).css("background-color", "yellow");
-    }
+  // Add a click listener to the challenge button
+  $("#button-challenge").click(function(){
+      // Now add (or subtract) the "special" class to the section
+      $("#challenge").toggleClass("special");
   });
+
+  $("#button-problems").click(function(){
+      // Now add (or subtract) the "special" class to the section
+      $("#Problems").toggleClass("special");
+  });
+
+  $("#button-results").click(function(){
+      // Now add (or subtract) the "special" class to the section
+      $("#Results").toggleClass("special");
+  });
+
+  $("p").on({
+      mouseenter: function(){
+          $(this).css("background-color", "lightgray");
+      },
+      mouseleave: function(){
+          $(this).css("background-color", "lightblue");
+      },
+      click: function(){
+          $(this).css("background-color", "yellow");
+      }
+  });
+});
 

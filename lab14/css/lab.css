@@ -1,4 +1,6 @@
-/* General styling */
+/* Y2K Themed CSS for Lab 14 */
+
+/* Body styling */
 body {
     background: linear-gradient(to right, #ff00cc, #333399);
     color: #ffffff;
@@ -8,6 +10,7 @@ body {
     text-align: center;
 }
 
+/* Main content styling */
 #content {
     padding: 20px;
     border: 3px solid #ffcc00;
@@ -16,11 +19,15 @@ body {
     box-shadow: 0px 0px 10px 5px #ffcc00;
 }
 
+/* Section and header styling */
+section {
+    margin: 20px 0;
+}
+
 h1 {
     font-size: 3em;
     text-shadow: 2px 2px 5px #00ff00;
     margin-bottom: 20px;
-    animation: blink 2s infinite;
 }
 
 h2 {
@@ -29,12 +36,14 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Paragraph styling */
 p {
     font-size: 1.2em;
     margin-bottom: 20px;
     text-align: left;
 }
 
+/* Minor section styling */
 .minor-section {
     border: 2px solid #00ffcc;
     padding: 15px;
@@ -43,12 +52,7 @@ p {
     border-radius: 10px;
 }
 
-.special {
-    background-color: yellow;
-    border: 2px solid red;
-    color: black;
-}
-
+/* Links styling */
 a {
     color: #ffcc00;
     text-decoration: none;
@@ -58,6 +62,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Button styling */
 button {
     background-color: #ff6600;
     color: #ffffff;
@@ -73,6 +78,7 @@ button:hover {
     background-color: #ff3300;
 }
 
+/* Animations */
 @keyframes blink {
     0% {
         opacity: 1;
@@ -85,3 +91,6 @@ button:hover {
     }
 }
 
+h1 {
+    animation: blink 2s infinite;
+}
